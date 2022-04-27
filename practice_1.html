@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="race()">run</button>
+    <p id="run1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
+    <p id="run2">&nbsp;&nbsp;&nbsp;&nbsp;***</p>
+    <p id="run3">&nbsp;&nbsp;&nbsp;****</p>
+    <p id="run4">&nbsp;&nbsp;******</p>
+    <p id="run5">&nbsp;********</p>
+
+    <script>
+      function race() {
+        var Acolor = new Array("red", "orange", "green");
+        var Bcolor = 0;
+        function hello() {
+          
+          var Ccolor = Acolor[Bcolor++];
+          run1.style.color = Ccolor;
+          run2.style.color = Ccolor;
+          run3.style.color = Ccolor;
+          run4.style.color = Ccolor;
+          run5.style.color = Ccolor;
+          if (Bcolor >= Acolor.length) {
+            Bcolor = 0;
+          }
+          return hello;
+        }
+        setInterval(hello(), 500);
+      }
+    </script>
+  </body>
+</html>
