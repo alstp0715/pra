@@ -2,35 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>pra_2</title>
+    <style>
+      p
+      {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 0.3;
+      }
+    </style>
 </head>
 <body>
     <button onclick="race()">run</button>
-    <p id="run1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
-    <p id="run2">&nbsp;&nbsp;&nbsp;&nbsp;***</p>
-    <p id="run3">&nbsp;&nbsp;&nbsp;****</p>
-    <p id="run4">&nbsp;&nbsp;******</p>
-    <p id="run5">&nbsp;********</p>
-
+    <p id="run6" style="color: blueviolet; font-size: 34PX;font-weight: 900;line-height: 0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
+    <p id="run1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</p>
+    <p id="run2">&nbsp;&nbsp;&nbsp;&nbsp;****</p>
+    <p id="run3">&nbsp;&nbsp;&nbsp;******</p>
+    <p id="run4">&nbsp;&nbsp;********</p>
+    <p id="run5">&nbsp;**********</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;*****</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;*****</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;*****</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;*****</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;*****</p>
     <script>
-      function race() {
-        var Acolor = new Array("red", "orange", "green");
-        var Bcolor = 0;
-        function hello() {
-          
-          var Ccolor = Acolor[Bcolor++];
-          run1.style.color = Ccolor;
-          run2.style.color = Ccolor;
-          run3.style.color = Ccolor;
-          run4.style.color = Ccolor;
-          run5.style.color = Ccolor;
-          if (Bcolor >= Acolor.length) {
-            Bcolor = 0;
-          }
-          return hello;
+      
+       function race() {
+         //red run
+        setTimeout(  function (){
+        run1.style.color='red'
+         },500);
+         setTimeout(  function (){
+        run2.style.color='red'
+         },1000);
+         setTimeout(  function (){
+        run3.style.color='red'
+         },1500);
+         setTimeout(  function (){
+        run4.style.color='red'
+         },2000);
+         setTimeout(  function (){
+        run5.style.color='red'
+         },2500);
+         //blue run
+         setTimeout(  function (){
+        run1.style.color='blue'
+         },3000);
+         setTimeout(  function (){
+        run2.style.color='blue'
+         },3500);
+         setTimeout(  function (){
+        run3.style.color='blue'
+         },4000);
+         setTimeout(  function (){
+        run4.style.color='blue'
+         },4500);
+         setTimeout(  function (){
+        run5.style.color='blue'
+         },5000);
+         //green run
+         setTimeout(  function (){
+        run1.style.color='green'
+         },5500);
+         setTimeout(  function (){
+        run2.style.color='green'
+         },6000);
+         setTimeout(  function (){
+        run3.style.color='green'
+         },6500);
+         setTimeout(  function (){
+        run4.style.color='green'
+         },7000);
+         setTimeout(  function (){
+        run5.style.color='green'
+         },7500);
+         
         }
-        setInterval(hello(), 500);
-      }
+      // setTimeout(
+      //  function race() {
+      //   run2.style.color='red'
+      // },1800)
+      // setTimeout(
+      //  function race() {
+      //   run3.style.color='red'
+      // },2600)
+      // setTimeout(
+      //  function race() {
+      //   run4.style.color='red'
+      // },3400)
+      // setTimeout(
+      //  function race() {
+      //   run5.style.color='red'
+      // },4200)
     </script>
   </body>
 </html>
